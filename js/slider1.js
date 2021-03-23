@@ -54,3 +54,14 @@ prev.addEventListener("click", () => {
     indicator[currentNum].classList.add("current");
   }
 });
+
+function autoPlay() {
+  setTimeout(() => {
+    next.click();
+    autoPlay();
+  }, 3000);
+}
+
+window.addEventListener("load", () => {
+  autoPlay();
+});
