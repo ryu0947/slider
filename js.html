@@ -16,19 +16,23 @@
       </button>
     </header>
     <div class="container">
-      <div class="main-img">
-          <img src="img/img1.jpg" alt="黒猫の画像">
+      <div class="slider">
+        <img src="img/img1.jpg" alt="黒猫の画像" />
+        <nav class="nav">
+          <div id="next" class="arrow-nav next">
+            <img src="img/right-arrow.png" alt="次へ" class="arrow-img" />
+          </div>
+          <div id="prev" class="arrow-nav prev">
+            <img src="img/left-arrow.png" alt="前へ" class="arrow-img" />
+          </div>
+        </nav>
       </div>
-      <nav>
-          <div class="next"><img src="img/right-arrow.png" alt="次へ"></div>
-          <div class="prev"><img src="img/left-arrow.png" alt="前へ"></div>
-      </nav>
       <ul class="indicator">
-          <li class="current"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <li class="indicator-item current"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
       </ul>
     </div>
     <script src="js/accordion-menu1.js"></script>
