@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>jQueryでアコーディオンメニュー</title>
+    <title>jQueryでスライダー</title>
   </head>
   <body>
     <header class="header">
@@ -16,32 +16,26 @@
       </button>
     </header>
     <div class="container">
-      <button class="accordion-btn">アコーディオン1(クリック！)</button>
-      <ul class="accordion-list">
-        <li class="accordion-item">アコーディオン1</li>
-        <li class="accordion-item">アコーディオン2</li>
-        <li class="accordion-item">アコーディオン3</li>
-        <li class="accordion-item">アコーディオン4</li>
-        <li class="accordion-item">アコーディオン5</li>
-      </ul>
-      <button class="accordion-btn">アコーディオン2(クリック！)</button>
-      <ul class="accordion-list">
-        <li class="accordion-item">アコーディオン1</li>
-        <li class="accordion-item">アコーディオン2</li>
-        <li class="accordion-item">アコーディオン3</li>
-        <li class="accordion-item">アコーディオン4</li>
-        <li class="accordion-item">アコーディオン5</li>
-      </ul>
-      <button class="accordion-btn">アコーディオン3(クリック！)</button>
-      <ul class="accordion-list">
-        <li class="accordion-item">アコーディオン1</li>
-        <li class="accordion-item">アコーディオン2</li>
-        <li class="accordion-item">アコーディオン3</li>
-        <li class="accordion-item">アコーディオン4</li>
-        <li class="accordion-item">アコーディオン5</li>
+      <div class="slider">
+        <img src="img/img1.jpg" alt="黒猫の画像" id="slide-img" />
+        <nav class="nav">
+          <div id="next" class="arrow-nav next">
+            <img src="img/right-arrow.png" alt="次へ" class="arrow-img" />
+          </div>
+          <div id="prev" class="arrow-nav prev">
+            <img src="img/left-arrow.png" alt="前へ" class="arrow-img" />
+          </div>
+        </nav>
+      </div>
+      <ul class="indicator">
+        <li class="indicator-item current"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
       </ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/accordion-menu2.js"></script>
+    <script src="js/slider2.js"></script>
   </body>
 </html>
