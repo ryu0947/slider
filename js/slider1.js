@@ -13,10 +13,24 @@ const prev = document.getElementById("prev");
 const indicator = document.querySelectorAll(".indicator li");
 
 let currentNum = 0;
+let ckickCheck;
+
+indicator.forEach((clickItem, index) => {
+  clickItem.addEventListener("click", () => {
+    slideImg.src = images[index];
+    indicator[index].classList.add("current");
+    if (currentNum === index) {
+      return;
+    } else {
+      indicator[currentNum].classList.remove("current");
+    }
+    currentNum = index;
+  });
+});
 
 next.addEventListener("click", () => {
   if (currentNum < images.length - 1) {
-    ++currentNum;
+    currentNum++;
     slideImg.src = images[currentNum];
     indicator[currentNum - 1].classList.remove("current");
     indicator[currentNum].classList.add("current");
