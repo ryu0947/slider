@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>jQueryでアコーディオンメニュー</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">jQuery</h1>
+      <button id="js-hamburger" class="hamburger">
+        <span id="js-top-line" class="top-line"></span>
+        <span id="js-center-line" class="center-line"></span>
+        <span id="js-bottom-line" class="bottom-line"></span>
+      </button>
+    </header>
+    <div class="container">
+      <button class="accordion-btn">アコーディオン1(クリック！)</button>
+      <ul class="accordion-list">
+        <li class="accordion-item">アコーディオン1</li>
+        <li class="accordion-item">アコーディオン2</li>
+        <li class="accordion-item">アコーディオン3</li>
+        <li class="accordion-item">アコーディオン4</li>
+        <li class="accordion-item">アコーディオン5</li>
+      </ul>
+      <button class="accordion-btn">アコーディオン2(クリック！)</button>
+      <ul class="accordion-list">
+        <li class="accordion-item">アコーディオン1</li>
+        <li class="accordion-item">アコーディオン2</li>
+        <li class="accordion-item">アコーディオン3</li>
+        <li class="accordion-item">アコーディオン4</li>
+        <li class="accordion-item">アコーディオン5</li>
+      </ul>
+      <button class="accordion-btn">アコーディオン3(クリック！)</button>
+      <ul class="accordion-list">
+        <li class="accordion-item">アコーディオン1</li>
+        <li class="accordion-item">アコーディオン2</li>
+        <li class="accordion-item">アコーディオン3</li>
+        <li class="accordion-item">アコーディオン4</li>
+        <li class="accordion-item">アコーディオン5</li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/accordion-menu2.js"></script>
+  </body>
+</html>
