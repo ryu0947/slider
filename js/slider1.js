@@ -13,7 +13,6 @@ const prev = document.getElementById("prev");
 const indicator = document.querySelectorAll(".indicator li");
 
 let currentNum = 0;
-let ckickCheck;
 
 indicator.forEach((clickItem, index) => {
   clickItem.addEventListener("click", () => {
