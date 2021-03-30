@@ -14,6 +14,13 @@ const indicator = document.querySelectorAll(".indicator li");
 
 let currentNum = 0;
 
+slideImg.src = images[currentNum];
+
+images.forEach((image) => {
+  const img = document.createElement("img");
+  img.src = image;
+});
+
 indicator.forEach((clickItem, index) => {
   clickItem.addEventListener("click", () => {
     slideImg.src = images[index];
